@@ -23,9 +23,10 @@
 6：安装插件：cnpm install --save-dev html-webpack-plugin         使用模板依赖
 	需要init，json需要增加命令，然后安装，再运行
 从远程克隆下来再npm install 还是有问题，无法安装依赖；合并远程到本地也还是不行；
-远程文件合并到本地——remote——fetch from ——origin:merge——local merge
-分别安装依赖项之后可以运行，出现文件大小的waring，没关系
-
+	远程文件合并到本地——remote——fetch from ——origin:merge——local merge
+	分别安装依赖项之后可以运行，出现文件大小的waring，没关系
+直接打包的文件居然有 1.74M  太大了，怪不得小米球那么慢，不是缓存的关系；
+	注释掉开发环境命令之后，只有303K。虽然有waring
 
 
 ***************所有的依赖项目***最终需要自己构建一个包，可以直接运行webpack，

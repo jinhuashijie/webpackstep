@@ -6,6 +6,7 @@ class Greeter extends Component{
     return (
       <div>
         {config.greetText}
+        <div>测试react里面的热更新-成功</div>
       </div>
     );
   }
