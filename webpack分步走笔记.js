@@ -6,16 +6,20 @@
 	加入"start": "webpack"  命令，直接运行 npm start  --需要cli支持--成功
 	cnpm install  webpack-cli --save-dev
 
-
+2：第二步：实现服务器：安装之后
+	修改config的devServer，
+	向json添加命令文件
+    "server": "webpack-dev-server --open"
+    npm run server 会自动打包，并自动打开端口--热刷新已经实现 由config中 inline: true控制
 
 
 
 
 ***************所有的依赖项目***最终需要自己构建一个包，可以直接运行webpack，
                                           以及运行express模板；
-webpack：webpack webpack-cli
+webpack：webpack webpack-cli webpack-dev-server
 
-cnpm install webpack webpack-cli --save-dev
-npm install --save-dev webpack-dev-server
+cnpm install webpack webpack-cli webpack-dev-server --save-dev
+npm install --save-dev
 
 
