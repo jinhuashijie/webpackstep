@@ -17,6 +17,8 @@
 	cnpm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react
 	cnpm install --save react react-dom
 	安装完loader依赖之后，必须重新npm start 打包，再run server 不然报找不到loader
+4：第四步： 配置  .babelrc,
+	要把loader中的use下的options中的内容抽离出来,options整个条目给删掉，
 
 
 
