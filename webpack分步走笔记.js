@@ -11,6 +11,12 @@
 	向json添加命令文件
     "server": "webpack-dev-server --open"
     npm run server 会自动打包，并自动打开端口--热刷新已经实现 由config中 inline: true控制
+3：第三步：开始使用插件；loaders  在这里批量安装出了问题，跑很久进度都是0/3
+	必须在json文件中新添加启动命令，npm run server 才能跑；
+	分开跑，可以成功，也有大量重连 ---安装loader依赖包
+	cnpm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react
+	cnpm install --save react react-dom
+	安装完loader依赖之后，必须重新npm start 打包，再run server 不然报找不到loader
 
 
 
@@ -20,6 +26,6 @@
 webpack：webpack webpack-cli webpack-dev-server
 
 cnpm install webpack webpack-cli webpack-dev-server --save-dev
-npm install --save-dev
+cnpm install  webpack-dev-server --save-dev
 
 
