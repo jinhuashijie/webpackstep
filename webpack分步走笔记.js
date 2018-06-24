@@ -22,7 +22,9 @@
 5：第五步：安装css-loader  cnpm install --save-dev style-loader css-loader
 6：安装插件：cnpm install --save-dev html-webpack-plugin         使用模板依赖
 	需要init，json需要增加命令，然后安装，再运行
-从远程克隆下来再npm install 还是有问题，无法安装依赖；
+从远程克隆下来再npm install 还是有问题，无法安装依赖；合并远程到本地也还是不行；
+远程文件合并到本地——remote——fetch from ——origin:merge——local merge
+分别安装依赖项之后可以运行，出现文件大小的waring，没关系
 
 
 
@@ -31,7 +33,7 @@
 
 cnpm install webpack webpack-cli webpack-dev-server --save-dev      基本依赖：
 cnpm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react 转义
-cnpm install --save react react-dom                 react依赖
+cnpm install --save react react-dom react                react依赖
 cnpm install --save-dev style-loader css-loader          css-loader依赖
 cnpm install --save-dev html-webpack-plugin         使用模板依赖
 
