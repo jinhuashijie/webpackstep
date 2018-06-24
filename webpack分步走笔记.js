@@ -19,15 +19,19 @@
 	安装完loader依赖之后，必须重新npm start 打包，再run server 不然报找不到loader
 4：第四步： 配置  .babelrc,
 	要把loader中的use下的options中的内容抽离出来,options整个条目给删掉，
-
+5：第五步：安装css-loader  cnpm install --save-dev style-loader css-loader
+6：安装插件：cnpm install --save-dev html-webpack-plugin         使用模板依赖
+	需要init，json需要增加命令，然后安装，再运行
 
 
 
 ***************所有的依赖项目***最终需要自己构建一个包，可以直接运行webpack，
                                           以及运行express模板；
-webpack：webpack webpack-cli webpack-dev-server
 
-cnpm install webpack webpack-cli webpack-dev-server --save-dev
-cnpm install  webpack-dev-server --save-dev
+cnpm install webpack webpack-cli webpack-dev-server --save-dev      基本依赖：
+cnpm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react 转义
+cnpm install --save react react-dom                 react依赖
+cnpm install --save-dev style-loader css-loader          css-loader依赖
+cnpm install --save-dev html-webpack-plugin         使用模板依赖
 
-
+cnpm install webpack webpack-cli webpack-dev-server babel-core babel-loader babel-preset-env babel-preset-react react react-dom style-loader css-loader --save-dev
