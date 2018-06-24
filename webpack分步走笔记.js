@@ -22,6 +22,7 @@
 5：第五步：安装css-loader  cnpm install --save-dev style-loader css-loader
 6：安装插件：cnpm install --save-dev html-webpack-plugin         使用模板依赖
 	需要init，json需要增加命令，然后安装，再运行
+从远程克隆下来再npm install 还是有问题，无法安装依赖；
 
 
 
